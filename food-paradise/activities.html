@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Handmade Store</title>
+    <link
+      rel="shortcut icon"
+      href="image/logo/handmade-logo.svg"
+      type="image/x-icon"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font Lexend -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/activities.css" />
+    <link rel="stylesheet" href="css/formDonation.css" />
+    <link rel="stylesheet" href="css/about_donation.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- header start -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><img src="image/logo/handmade-store.svg" alt=""
+      /></a>
+
+      <nav class="navbar">
+        <a href="index.html"
+          ><i class="fa-solid fa-house" style="margin-right: 10px"></i>Trang
+          chủ</a
+        >
+        <a href="category.html">Danh mục</a>
+        <a href="activities.html">Hoạt động</a>
+        <a href="about.html">Giới thiệu</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <div class="login">
+        <div class="signin" style="margin-bottom: 10px">
+          <a href="login.html"
+            ><i
+              class="fa-solid fa-arrow-right-to-bracket"
+              style="margin-right: 1rem"
+            ></i
+            >Đăng nhập</a
+          >
+        </div>
+        <hr style="width: 100%; color: #a1a1a1" />
+        <div class="signup">
+          <a href="login.html"
+            ><i class="fa-solid fa-user-plus" style="margin-right: 1rem"></i
+            >Đăng ký</a
+          >
+        </div>
+      </div>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/product/product-1.jpg" alt="" />
+          <div class="content">
+            <h3>Chậu hoa len</h3>
+            <span class="price">50.000 -</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/product/product-1.jpg" alt="" />
+          <div class="content">
+            <h3>Chậu hoa len</h3>
+            <span class="price">50.000 -</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/product/product-2.jpg" alt="" />
+          <div class="content">
+            <h3>Hoa hướng dương len</h3>
+            <span class="price">50.000 -</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/product/product-3.jpg" alt="" />
+          <div class="content">
+            <h3>Túi hình bánh quy</h3>
+            <span class="price">50.000 -</span>
+            <span class="quantity">SL: 1</span>
+          </div>
+        </div>
+        <div class="total">Tổng: 150.000</div>
+        <a href="#" class="btn">Thanh toán</a>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <div
+      class="carousel slide"
+      data-bs-ride="carousel"
+      id="carouselExampleCaptions"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-1">
+          <div class="carousel-caption">
+            <h5>HandMade<span class="text">Store</span></h5>
+            <h4>
+              Chúng tôi tổ chức một sự kiện ủng hộ với mục tiêu nâng cao ý thức về vấn đề xã hội. Tham gia ngay để lan tỏa tình yêu và sẻ chia với những người cần sự giúp đỡ.
+            </h4>
+            <a href="#form_Donation"><button class="Button">ỦNG HỘ</button></a>
+          </div>
+        </div>
+        <div class="carousel-item bg-2">
+          <div class="carousel-caption">
+            <h5>HandMade <span class="text">Store</span></h5>
+            <h4 style="overflow-wrap: break-word">
+              Bạn có đam mê với việc học hỏi và chia sẻ kiến thức? Hãy tham gia workshop của chúng tôi để trao đổi ý tưởng và học hỏi từ các chuyên gia hàng đầu trong ngành.
+            </h4>
+            <a href="#form_Donation"><button class="Button">ỦNG HỘ</button></a>
+          </div>
+        </div>
+        <div class="carousel-item bg-3">
+          <div class="carousel-caption">
+            <h5>HandMade<span class="text">Store</span></h5>
+            <h4>
+              Bạn muốn làm điều ý nghĩa và giúp đỡ những người kém may mắn? Hãy tham gia cùng chúng tôi trong hoạt động từ thiện.
+            </h4>
+            <a href="#form_Donation"><button class="Button">ỦNG HỘ</button></a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        data-bs-slide="prev"
+        data-bs-target="#carouselExampleCaptions"
+        type="button"
+      >
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        data-bs-slide="next"
+        data-bs-target="#carouselExampleCaptions"
+        type="button"
+      >
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <!--thumbnails-->
+      <div class="carousel-indicators">
+        <button
+          aria-label="Slide 1"
+          class="active"
+          data-bs-slide-to="0"
+          data-bs-target="#carouselExampleCaptions"
+          type="button"
+        >
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1516783154360-123b392d0833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+          />
+        </button>
+        <button
+          aria-label="Slide 2"
+          data-bs-slide-to="1"
+          data-bs-target="#carouselExampleCaptions"
+          type="button"
+        >
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1534953342533-7711c98712be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+        </button>
+        <button
+          aria-label="Slide 3"
+          data-bs-slide-to="2"
+          data-bs-target="#carouselExampleCaptions"
+          type="button"
+        >
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1603533627544-4b256401b1ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!---Stories Section-->
+    <div class="wrapper">
+      <div class="zoom-effect-container">
+        <div class="image-card bg-one"></div>
+        <div class="content">
+          <h3 class="tittel">ỦNG HỘ</h3>
+          <p >Những sản phẩm thủ công được thiết kế đẹp mắt, ý nghĩa với nguyên liệu thân thiện. Một số sản phẩm được làm từ những đôi bàn tay của người có hoàn cảnh khó khăn. Vậy nên mỗi sản phẩm mà các bạn ủng hộ cho Handmade Store là một điều quý giá !!</p>
+          <a class="button" href="#form_Donation">Ủng hộ</a>
+        </div>
+      </div>
+      
+      <div class="zoom-effect-container">
+        <div class="image-card bg-two"></div>
+        <div class="content">
+          <h3 class="tittel">WORKSHOP</h3>
+          <p >Những buổi workshop offline và online dành cho các bạn yêu thích và muốn tìm hiểu cách tạo ra một món đồ thủ công. Chia sẻ kỹ thuật, bí quyết và các mẹo nhỏ để bạn tự tạo ra những sản phẩm đẹp và độc đáo.</p>
+          <a class="button" href="#form_Donation">Ủng hộ</a>
+        </div>
+      </div>
+      
+      <div class="zoom-effect-container">
+        <div class="image-card bg-three"></div>
+        <div class="content">
+          <h3 class="tittel">TỪ THIỆN</h3>
+          <p >Một phần doanh thu từ việc bán sản phẩm sẽ được quyên góp cho tổ chức hoặc quỹ từ thiện. Mọi thông tin về hoạt động công khai minh bạch trên website. Nhằm mang lại tác động tích cực cho cộng đồng.</p>
+          <a class="button" href="#form_Donation">Ủng hộ</a>
+        </div>
+      </div>
+      
+    </div>
+    <!--- End of Stories Section-->
+    <div id="form_Donation"><div class="card-form">
+      <form class="deposit">
+        <div class="form-indicator"></div>
+        <div class="form-body">
+          <div class="row">
+            <div class="form-block">
+              <div class="button" id="1" onclick="setValue(this)">20.000</div>
+              <div class="button" id="2" onclick="setValue(this)">50.000</div>
+              <div class="button" id="3" onclick="setValue(this)">100.000</div>
+              <div class="button" id="4" onclick="setValue(this)">200.000</div>
+              <div class="button" id="5" onclick="setValue(this)">300.000</div>
+              <div class="button" id="6" onclick="setValue(this)">400.000</div>
+              <div class="button" id="7" onclick="setValue(this)">500.000</div>
+            </div>  
+          </div>
+          
+          <div class="row">
+            <input type="text" id="cc" maxlength="16" placeholder="Số tài khoản/thẻ tín dụng">
+            <input type="text" id="name" placeholder="Họ và tên">
+            <input type="text" id ="date" maxlength="11" placeholder="Ngày sinh">
+            <input type="text" id ="cvc" maxlength="100" placeholder="Lời nhắn">
+          </div>
+        </div>
+        <div class="form-footer">
+          <div class="btn" onclick="validate(this)">Ủng hộ</button>
+          </div>
+        </form>
+        <script src="js/formDonation.js"></script>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="formDonation.js"></script>
+</body>
+</html>

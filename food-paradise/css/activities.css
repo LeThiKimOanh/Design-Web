@@ -1,0 +1,179 @@
+body {
+  font-family: montserrat;
+}
+.carousel{
+  margin-top: 7.6rem;
+}
+.carousel-item {
+  height: 620px;
+}
+.bg-1 {
+  background-image: url(https://images.unsplash.com/photo-1516783154360-123b392d0833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+}
+.bg-2 {
+  background-image: url(https://images.unsplash.com/photo-1534953342533-7711c98712be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+}
+.bg-3 {
+  background-image: url(https://images.unsplash.com/photo-1603533627544-4b256401b1ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+}
+.bg-1,
+.bg-2,
+.bg-3 {
+  -webkit-background-size: cover;
+  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-caption {
+  width: 1170px;
+  height: 400px;
+  bottom: 150px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.384); /* Màu trắng với độ mờ */
+  z-index: 2;
+}
+.carousel-caption h5 {
+  color: #2b2b2b;
+  font-size: 85px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  font-family: "Moon Dance", cursive;
+}
+.text {
+  color: hsl(44, 100%, 62%);
+}
+.carousel-caption h4 {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-inner:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.carousel-indicators {
+  bottom: 65px;
+}
+.carousel-indicators img {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+}
+.carousel-indicators button {
+  width: 100px !important;
+}
+
+/* Điện thoại di động */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .carousel-caption {
+    width: 320px;
+    height: 370px;
+    bottom: 100px;
+    margin-left: -5px !important;
+  }
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+  .carousel-caption h4 {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+/* Máy tính bảng */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel-caption {
+    bottom: 120px;
+    width: 650px;
+    height: 300px;
+    margin-left: 1.8em !important;
+  }
+  .carousel-caption h5 {
+    font-size: 40px;
+  }
+  .carousel-caption h4 {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .carousel-caption {
+    bottom: 150px;
+    margin-left: 3em !important;
+  }
+  .carousel-caption h5 {
+    font-size: 65px;
+  }
+  .carousel-caption h4 {
+    font-size: 18px;
+    width: 100%;
+    flex: 30%;
+  }
+}
+
+/* Màn hình lớn */
+@media only screen and (min-width: 1280px) {
+  .carousel-caption {
+    padding: 3rem 5rem;
+    bottom: 200px;
+    margin-left: -5.5em !important;
+    margin-bottom: -7em;
+  }
+  a .carousel-caption h5 {
+    font-size: 80px;
+  }
+  .carousel-caption h4 {
+    font-size: 20px;
+    width: 100%;
+    color: #333333;
+  }
+}
+.carousel-caption button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #ed988f, #f7d3cf);
+  border-radius: 30px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 2em;
+  margin-top: 2rem;
+}
+
+.carousel-caption button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #f7d3cf;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(222, 101, 65, 0.104);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+.carousel-caption button:active {
+  transform: translateY(2px);
+  color: rgb(255, 194, 61);
+}
